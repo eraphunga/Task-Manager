@@ -1,12 +1,11 @@
 # =====importing libraries===========
-'''This is the section where you will import libraries'''
 
 # ====Login Section====
-'''Here you will write code that will allow a user to login.
-  - Your code must read usernames and password from the user.txt file
-  - You can use a list or dictionary to store a list of usernames
+'''The following section that will allow a user to login.
+  - Reading usernames and password from the user.txt file
+  - Using a list or dictionary to store a list of usernames
   - And passwords from the file
-  - Use a while loop to validate your user name and password'''
+  - Using a while loop to validate the user name and password'''
 
 user = {}
 
@@ -32,7 +31,7 @@ while True:
 
 while True:
     # Present the menu to the user and
-    # make sure that the user input is converted to lower case.
+    # Ensure that the user input is converted to lower case.
 
     if username != "admin" and password != "adm1n":
 
@@ -82,7 +81,7 @@ e - exit
                 print("\nNew user has been added\n")
 
         '''This code block will add a new user to the user.txt file
-        - You can use the following steps:
+        -It follows these steps:
             - Request input of a new username
             - Request input of a new password
             - Request input of password confirmation.
@@ -122,7 +121,7 @@ e - exit
         print("\nThe task has been added\n")
 
         '''This code block will allow a user to add a new task to task.txt file
-            - You can use these steps:
+            - Using the following steps:
                 - Prompt a user for the following:
                     - the username of the person whom the task is assigned to,
                     - the title of the task,
@@ -148,12 +147,11 @@ Task description:   {temp[2]}
                 # print(line.strip())
 
         '''This code block will read the task from task.txt file and
-        print to the console in the format of Output 2 presented in the PDF
-        You can do it in this way:
+        print to the console.
+        It will be done in the following ways:
         - Read a line from the file.
         - Split that line where there is comma and space.
-        - Then print the results in the format shown in the Output 2 in the PDF
-        - It is much easier to read a file using a for loop.'''
+        - Then print the results in a user friendly way'''
 
     elif menu == 'vm':
         with open('tasks.txt', 'r') as file:
@@ -175,13 +173,12 @@ Task description:   {temp[2]}
 
         '''This code block will read the task from task.txt file and
         print to the console in the format of Output 2 presented in the PDF
-        You can do it in this way:
+        It will be done this way:
         - Read a line from the file
         - Split the line where there is comma and space.
         - Check if the username of the person logged in is the same as the
         username you have read from the file.
-        - If they are the same you print the task in the format of Output 2
-        shown in the PDF '''
+        - If they are the same print the task in a user friendly format '''
 
     # elif menu == 'ds' and username == "admin" and password == "adm1n":
     #    print("Tasks and user statistics are as follows:")
